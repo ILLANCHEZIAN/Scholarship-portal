@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Us - Scholarship Portal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- ✅ Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- ✅ Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- ✅ Custom Styles -->
+    <style>
+        .bg-gradient-primary {
+            background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d);
+            background-size: 300% 300%;
+            animation: gradientBG 10s ease infinite;
+        }
+
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .form-control:focus,
+        .form-select:focus {
+            border-color: #b21f1f;
+            box-shadow: 0 0 0 0.2rem rgba(178, 31, 31, 0.25);
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+            transition: all 0.3s ease-in-out;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #1a2a6c, #b21f1f);
+            border: none;
+        }
+
+        .btn-primary:hover {
+            background: linear-gradient(135deg, #b21f1f, #1a2a6c);
+        }
+
+        @media (max-width: 576px) {
+            textarea.form-control {
+                min-height: 120px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- Contact Section -->
+<div class="container my-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-8">
+            <!-- Contact Form Card -->
+            <div class="card shadow-lg border-0 rounded-4">
+                <div class="card-header text-white bg-gradient-primary">
+                    <h3 class="mb-0"><i class="fas fa-envelope me-2"></i>Contact Us</h3>
+                </div>
+                <div class="card-body p-4">
+                    <form id="contactForm" enctype="multipart/form-data">
+                        <!-- Full Name -->
+                        <div class="mb-4">
+                            <label for="name" class="form-label">Full Name <span class="text-danger">*</span></label>
+                            <div class="input-group">
+                                <span class="input-group-text"><i class="fas fa-user"></i></span>
+                                <input type="text" id="name" name="name" class="form-control" placeholder="Enter your full name" required>
+                            </div>
+                        </div>
+
+                        <!-- Email -->
+                        <div class="mb-4">
+                            <label for="email" class="form-label">Email Address <span class="text-danger">*</span></label>
+                            <div class="input-group">
+                                <span class="input-group-text"><i class="fas fa-at"></i></span>
+                                <input type="email" id="email" name="email" class="form-control" placeholder="Enter your email" required>
+                            </div>
+                        </div>
+
+                        <!-- Subject -->
+                        <div class="mb-4">
+                            <label for="subject" class="form-label">Subject <span class="text-danger">*</span></label>
+                            <div class="input-group">
+                                <span class="input-group-text"><i class="fas fa-tag"></i></span>
+                                <select id="subject" name="subject" class="form-select" required>
+                                    <option value="" disabled selected>Select a subject</option>
+                                    <option>General Inquiry</option>
+                                    <option>Scholarship Application</option>
+                                    <option>Technical Support</option>
+                                    <option>Partnership</option>
+                                    <option>Other</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- Message -->
+                        <div class="mb-4">
+                            <label for="message" class="form-label">Message <span class="text-danger">*</span></label>
+                            <div class="input-group">
+                                <span class="input-group-text"><i class="fas fa-comment-dots"></i></span>
+                                <textarea id="message" name="message" class="form-control" rows="5" placeholder="Enter your message" required></textarea>
+                            </div>
+                        </div>
+
+                        <!-- File Attachment -->
+                        <div class="mb-4">
+                            <label for="attachment" class="form-label">Attachment (Optional)</label>
+                            <input type="file" id="attachment" name="attachment" class="form-control" accept=".pdf,.doc,.docx,.jpg,.png">
+                            <small class="form-text text-muted">Max file size: 5MB (PDF, Word, or Image)</small>
+                        </div>
+
+                        <!-- Submit Button -->
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-primary btn-lg">
+                                <i class="fas fa-paper-plane me-2"></i>Send Message
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Contact Info Cards -->
+            <div class="row text-center mt-4">
+                <!-- Phone -->
+                <div class="col-md-4 mb-3">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body">
+                            <i class="fas fa-phone fa-2x text-primary mb-2"></i>
+                            <h5>Call Us</h5>
+                            <p class="mb-0">+1 (555) 123-4567</p>
+                            <small class="text-muted">Mon–Fri, 9am–5pm</small>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Email -->
+                <div class="col-md-4 mb-3">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body">
+                            <i class="fas fa-envelope fa-2x text-primary mb-2"></i>
+                            <h5>Email Us</h5>
+                            <p class="mb-0">contact@scholarship.com</p>
+                            <small class="text-muted">Response within 24 hours</small>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Location -->
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body">
+                            <i class="fas fa-map-marker-alt fa-2x text-primary mb-2"></i>
+                            <h5>Visit Us</h5>
+                            <p class="mb-0">123 Education St<br>Learning City, LN 12345</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ✅ Bootstrap JS Bundle -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- ✅ Contact Form JS -->
+<!-- ✅ Contact Form JS -->
+<script>
+document.getElementById("contactForm").addEventListener("submit", function (e) {
+    e.preventDefault();
+    
+    // Show loading state
+    const submitBtn = this.querySelector('button[type="submit"]');
+    const originalText = submitBtn.innerHTML;
+    submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+    submitBtn.disabled = true;
+    
+    const formData = new FormData(this);
+    
+    fetch('submit_contact.php', {
+        method: 'POST',
+        body: formData
+    })
+    .then(response => {
+        // First check if the response is JSON
+        const contentType = response.headers.get('content-type');
+        if (!contentType || !contentType.includes('application/json')) {
+            return response.text().then(text => {
+                throw new Error(`Server returned: ${text}`);
+            });
+        }
+        return response.json();
+    })
+    .then(data => {
+        if (data.success) {
+            alert(`Thank you, ${data.name}! ${data.message}`);
+            this.reset();
+        } else {
+            alert(`Error: ${data.message || 'Something went wrong'}`);
+        }
+    })
+    .catch(error => {
+        console.error('Error:', error);
+        alert(`An error occurred: ${error.message}`);
+    })
+    .finally(() => {
+        submitBtn.innerHTML = originalText;
+        submitBtn.disabled = false;
+    });
+});
+</script>
+
+</body>
+</html>

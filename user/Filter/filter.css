@@ -1,0 +1,121 @@
+body {
+  margin: 0;
+}
+
+header{
+  background-color: #333;
+  padding: 10px 0;
+  color: azure;
+  text-align: center;
+  margin: 0pz;
+}
+body{
+  margin: 0;
+}
+
+.container {
+  text-align: center;
+  margin-bottom: 10px;
+  padding: 10px;
+  background:linear-gradient(90deg, #f04f2e, #ecb260);
+  /*linear-gradient(90deg, #f04f2e, #f09819), linear-gradient(270deg, #fffdea, rgba(255, 253, 234, 0))*/
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); 
+  font-weight: 400;
+  font-size: 150%;   
+}
+
+
+#b1{
+  margin-top: 10px;
+  background-color: rgb(0, 140, 255);
+  border-radius: 5px;
+  transition: transform 0.3s ease, backgroundColor 0.3s ease;
+}
+
+#b1:hover{
+  background-color: rgb(243, 5, 5);
+  transform: scale(1.1);
+}
+
+#caste{
+  border-radius: 15px;
+  width: 100px;
+}
+#graduation{
+  border-radius: 15px;
+  width: 130px;
+}
+#government{
+  border-radius: 15px;
+  width: 120px;
+}
+#gender{
+  border-radius: 15px;
+  width: 120px;
+}
+#private{
+  border-radius: 15px;
+  width: 120px;
+}
+
+
+select, button {
+  margin: 0px;
+  padding: 5px;
+  font-size: 16px;
+}
+
+
+.scholarship-list {
+  padding: 20px;
+  background-color: #eeeaea;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 40px;
+  color: black;
+   
+}
+
+.scholarship {
+  gap: 5px;
+  background-color:#ffffff;
+  border: 2px solid #c7b5b5;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 20px;
+  transition: transform 0.3s ease, backgroundColor 0.3s ease; 
+}
+.scholarship:hover{
+      background-color: #615feb;
+      transform: scale(1.1);
+  
+}
+
+.apply-link {
+  border: 1px solid rgb(48, 42, 42);
+  border-radius: 8px;
+  transition: transform 0.2s ease, backgroundColor 0.3s ease; 
+  
+  color: white;
+  background-color: #0188f7;
+  text-decoration: underline;
+}
+.apply-link:hover{
+  color: #0571e4;
+  background-color: #ffffff;
+  transform: scale(1.1);
+}
+
+.filters {
+  padding-bottom: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.filters select {
+  width: 200px;
+}

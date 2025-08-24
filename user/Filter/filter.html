@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scholarship Portal</title>
+    <link rel="stylesheet" href="filter.css">
+</head>
+<body>
+    <header><h1>Available Scholarship</h1></header>
+
+<div class="container">
+
+    <div class="filters">
+        <label for="caste">Caste:</label>
+        <select id="caste">
+            <option value="">All</option>
+            <option value="General">General</option>
+            <option value="SC">SC</option>
+            <option value="ST">ST</option>
+            <option value="OBC">OBC</option>
+        </select>
+
+        <label for="graduation">Graduation:</label>
+        <select id="graduation">
+            <option value="">All</option>
+            <option value="Undergraduate">Undergraduate</option>
+            <option value="Postgraduate">Postgraduate/Phd</option>
+           
+        </select>
+
+        <label for="government">Government Scheme:</label>
+        <select id="government">
+            <option value="">Select Scheme</option>
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </select>
+
+        <label for="private">Private Scheme:</label>
+        <select id="private">
+            <option value="">Select Scheme</option>
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </select>
+
+        <label for="gender">Gender:</label>
+        <select id="gender">
+            <option value="">Select Gender</option>
+            <option value="Male">All</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Other">Other</option>
+        </select>
+        
+    </div>
+    <center><button id="b1" onclick="filterScholarships()">Filter Scholarships</button></center>
+    
+</div>
+  
+    
+    <div class="scholarship-list" id="scholarship-list">
+        <!-- Sample Scholarships -->
+        <div class="scholarship" data-caste="OBC" data-graduation="" 
+        data-government="no" data-private="yes" data-gender="All">
+        <h3>TOEFL Global Scholar Challenge 2025-26</h3>
+        <img src="New2025.jpg" alt="" width="270px" height="80px">
+        <p>2nd Edition is an online quiz competition organised by TOEFL to support Indian students aspiring to study abroad.</p>
+        <p><img src="Img.jpg" alt="" width="30px" height="20px">  <b>DeadLine:</b> 20-05-2025</p>
+        <a href="Toefl Scl.html" class="apply-link">Apply Here</a>
+        </div>
+
+        <div class="scholarship" data-caste="" data-graduation="" 
+            data-government="no" data-private="yes" data-gender="">
+            <h3>UQ International High Achievers Award</h3>
+            <img src="Queensland.jpg" alt="" width="270px" height="70px">
+            <p>India 2025 is an opportunity offered by the University of Queensland, Australia, Students enrolled in UG and PG courses.</p>
+            <p><img src="img2.png" alt="" width="30px" height="30px"> Always Open</p>
+            <a href="Queensland.html" class="apply-link">Apply Here</a>
+        </div>
+
+        <div class="scholarship" data-caste="" data-graduation="Postgraduate" 
+            data-government="yes" data-private="no" data-gender="Female">
+            <h3>Tata Innovation Fellowship 2024-25</h3>
+            <img src="Tata-Innovation-Fellowship.webp" alt="" width="250px" height="70px">
+            <p>Opportunity provided by the Department of Biotechnology, Ministry of Science & Technology, Government of India.</p>
+            <p><img src="Img.jpg" alt="" width="30px" height="30px"> Closed 17-03-2025</p>
+            <a href="https://dbtindia.gov.in/latest-announcement/advertisement-tata-innovation-fellowship-program-fy2024-25-0" class="apply-link">Apply Here</a>
+        </div>
+
+        <div class="scholarship" data-caste="" data-graduation="Undergraduate" 
+            data-government="" data-private="yes" data-gender="">
+            <h3>Alstom India Scholarship 2024-25</h3>
+            <img src="Alstom India.jpg" width="270px" height="70px">
+            <p>Alstom India that aims to provide financial support to students across India Alstom India that aims to provide financial support to students across India.</p>
+            <p><img src="img2.png" alt="" width="30px" height="30px">  04-05-2025</p>
+            <a href="Alstom.html" class="apply-link">Apply Here</a>
+        </div>
+
+        <div class="scholarship" data-caste="SC" data-graduation="" 
+            data-government="yes" data-private="no" data-gender="">
+            <h3>(NSFDC) Scheme for Scheduled Caste (SC) students</h3>
+            <img src="NSFDC.png" alt="" width="270px" height="70px">
+            <p>(NSFDC) Scheme for Scheduled Caste (SC) students pursuing professional or technical courses. It provides loans to cover tuition, hostel, books, and other educational expenses..</p>
+            <p><img src="Img.jpg" alt="" width="30px" height="30px"> 20-05-2025</p>
+            <a href="NSFDLC.html" class="apply-link">Apply Here</a>
+        </div>
+
+        <div class="scholarship" data-caste="ST" data-graduation="Undergraduate" 
+            data-government="yes" data-private="no" data-gender="Female">
+            <h3>ST Scholarship for Undergraduate</h3>
+            <p>Scholarship for ST students pursuing an undergraduate degree.</p>
+            <p><img src="img2.png" alt="" width="30px" height="30px">  20-05-2025</p>
+            <a href="#" class="apply-link">Apply Here</a>
+        </div>
+    </div>
+
+
+<script src="filter.js"></script>
+</script>
+
+</body>
+</html>
